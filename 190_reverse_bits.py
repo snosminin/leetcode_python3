@@ -8,4 +8,5 @@ class Solution:
 
         return result
 
-print(Solution().reverseBits(n = 11))
+
+print(Solution().reverseBits(n=11))

@@ -9,8 +9,8 @@ class Solution:
         result = []
 
         while current < len(nums):
-            start=nums[current]
-            
+            start = nums[current]
+
             while current < len(nums) - 1 and nums[current] == nums[current + 1] - 1:
                 current += 1
 
@@ -19,10 +19,10 @@ class Solution:
                 result.append(f'{start}')
             else:
                 result.append(f'{start}->{end}')
-            
+
             current += 1
 
         return result
 
 
-print(Solution().summaryRanges(nums = [0,1,2,4,5,7]))
+print(Solution().summaryRanges(nums=[0, 1, 2, 4, 5, 7]))
